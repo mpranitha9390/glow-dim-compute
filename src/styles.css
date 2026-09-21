@@ -59,6 +59,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-key: var(--key);
+  --color-key-hover: var(--key-hover);
+  --color-op: var(--op);
+  --color-op-hover: var(--op-hover);
+  --color-op-foreground: var(--op-foreground);
 }
 
 :root {
@@ -95,6 +100,11 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --key: oklch(0.968 0.007 247.896);
+  --key-hover: oklch(0.93 0.008 247.896);
+  --op: oklch(0.75 0.12 70);
+  --op-hover: oklch(0.71 0.13 70);
+  --op-foreground: oklch(0.2 0.05 70);
 }
 
 .dark {
@@ -130,6 +140,11 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --key: oklch(0.32 0.04 264);
+  --key-hover: oklch(0.37 0.045 264);
+  --op: oklch(0.68 0.14 65);
+  --op-hover: oklch(0.72 0.14 65);
+  --op-foreground: oklch(0.18 0.05 65);
 }
 
 @layer base {
