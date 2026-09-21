@@ -108,10 +108,14 @@ function Index() {
 
   function chooseOp(next: Op) {
     const v = current();
-    if (acc !== null && op !== null && !fresh) {
-      const r = compute(acc, v, op);
-      setAcc(r);
-      setDisplay(format(r));
+    if (acc !== null && op !== null) {
+      // A number was just typed: fold it into the running total.
+      // Operator pressed twice in a row (fresh): just swap the operator.
+      if (!fresh) {
+        const r = compute(acc, v, op);
+        setAcc(r);
+        setDisplay(format(r));
+      }
     } else {
       setAcc(v);
     }
